@@ -12,7 +12,7 @@ const AddService = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/dashboard/addService", {
+    fetch("https://fathomless-headland-38595.herokuapp.com/dashboard/addService", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

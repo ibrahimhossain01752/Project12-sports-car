@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const HomeCars = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:5000/allServices")
+      fetch("https://fathomless-headland-38595.herokuapp.com/allServices")
         .then((res) => res.json())
         .then((data) => setServices(data));
     }, []);
@@ -23,7 +23,7 @@ const HomeCars = () => {
     return (
         <Container>
             <Typography variant="h5" gutterBottom component="div" color="cadetblue" font-Weight="700" marginTop="20px">
-                Best Sports Car {newServices.length}
+                BEST SPORTS CAR
             </Typography>
 
             <Box sx={{ flexGrow: 1, marginTop: 5 }}>

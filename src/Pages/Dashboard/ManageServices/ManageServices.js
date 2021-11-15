@@ -11,7 +11,7 @@ const ManageService = () => {
   const [IsDelete, setIsDelete] = useState(false);
 
  useEffect(()=>{
-     fetch(`http://localhost:5000/dashboard/manageServices`)
+     fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/manageServices`)
      .then(res=> res.json())
      .then(data=>{
       setOrders(data)
@@ -25,7 +25,7 @@ const ManageService = () => {
     console.log(id)
     const confirmDelete = "Are You Sure To Delete this Orders??"
     if(window.confirm(confirmDelete)){
-       fetch(`http://localhost:5000/dashboard/manageServices/deleted/${id}`, {
+       fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/manageServices/deleted/${id}`, {
            method: 'DELETE',
         }).then(res => res.json())
         .then(data=> {

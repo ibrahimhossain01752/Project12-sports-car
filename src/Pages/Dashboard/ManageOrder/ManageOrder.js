@@ -10,7 +10,7 @@ const ManageOrder = () => {
     const [IsDelete, setIsDelete] = useState(false);
 
    useEffect(()=>{
-       fetch(`http://localhost:5000/dashboard/manageOrder`)
+       fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/manageOrder`)
        .then(res=> res.json())
        .then(data=>{
         setOrders(data)
@@ -21,7 +21,7 @@ const ManageOrder = () => {
 
    const Approved = (id) => {
        console.log(id)
-       fetch(`http://localhost:5000/dashboard/manageOrder/Approved/${id}`, {
+       fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/manageOrder/Approved/${id}`, {
           method: 'PUT',
           headers: {'Content-Type': 'application/json'},
        })  
@@ -49,7 +49,7 @@ const ManageOrder = () => {
      console.log(id)
      const confirmDelete = "Are You Sure To this Orders!"
      if(window.confirm(confirmDelete)){
-        fetch(`http://localhost:5000/dashboard/manageOrder/deleted/${id}`, {
+        fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/manageOrder/deleted/${id}`, {
             method: 'DELETE',
          }).then(res => res.json())
          .then(data=> {

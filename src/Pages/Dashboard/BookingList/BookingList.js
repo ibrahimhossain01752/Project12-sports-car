@@ -5,7 +5,7 @@ const BookingList = () => {
   const { user } = useFirebase();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrder/${user?.email}`)
+    fetch(`https://fathomless-headland-38595.herokuapp.com/myOrder/${user?.email}`)
       .then((res) => res.json())
       .then((data) => console.log(data));
   }, [user?.email]);

@@ -7,7 +7,7 @@ const MakeAdmin = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/dashboard/makeAdmin", {
+    fetch("https://fathomless-headland-38595.herokuapp.com/dashboard/makeAdmin", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

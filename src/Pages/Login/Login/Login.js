@@ -10,6 +10,8 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory();
+    const redirect = location.state?.from || "/home";
+
 
     const handleOnChange = e => {
         const field = e.target.name;
@@ -20,11 +22,13 @@ const Login = () => {
     }
     const handleLoginSubmit = e => {
         loginUser(loginData.email, loginData.password, location, history);
+        history.push(redirect);
         e.preventDefault();
     }
 
     const handleGoogleSignIn = () => {
         signInWithGoogle(location, history)
+        history.push(redirect);
     }
 
     return (

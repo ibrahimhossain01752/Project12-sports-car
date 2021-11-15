@@ -13,8 +13,8 @@ const HomeBanner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Porsche 718 Boxster</h3>
+            <p>The Mazda MX-5 is one of the very best enthusiast’s cars on sale,</p>
           </Carousel.Caption>
         </Carousel.Item >
 
@@ -26,8 +26,8 @@ const HomeBanner = () => {
           />
       
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Alpine A110</h3>
+            <p>The Mazda MX-5 is one of the very best enthusiast’s cars on sale, regardless of its</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -39,8 +39,8 @@ const HomeBanner = () => {
           />
       
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>BMW M3/M4</h3>
+            <p>The Mazda MX-5 is one of the very best enthusiast’s cars on sale, regardless of its</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

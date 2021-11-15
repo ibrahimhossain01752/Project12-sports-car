@@ -19,7 +19,7 @@ const Dashbaord = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/checkAdmin/${user?.email}`)
+    fetch(`https://fathomless-headland-38595.herokuapp.com/checkAdmin/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data)

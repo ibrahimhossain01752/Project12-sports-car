@@ -9,7 +9,7 @@ const MyBooking = () => {
 
 
   useEffect(() => {
-  fetch(`http://localhost:5000/dashboard/myBooking?email=${user?.email}`)
+  fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/myBooking?email=${user?.email}`)
   .then((res) => res.json())
   .then((data) => {
     console.log(data)
@@ -24,7 +24,7 @@ const MyBooking = () => {
   console.log(id)
   const confirmDelete = "Are You Sure To this Orders!"
   if(window.confirm(confirmDelete)){
-     fetch(`http://localhost:5000/dashboard/myBooking/deleted/${id}`, {
+     fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/myBooking/deleted/${id}`, {
          method: 'DELETE',
       }).then(res => res.json())
       .then(data=> {

@@ -17,7 +17,7 @@ const PlaceOrder = () => {
  const history = useHistory();
  
  useEffect(()=>{
-  fetch(`http://localhost:5000/services/${id}`)
+  fetch(`https://fathomless-headland-38595.herokuapp.com/services/${id}`)
   .then((res) => res.json())
   .then((result) => {
     setOrder(result[0])
@@ -33,7 +33,7 @@ const PlaceOrder = () => {
     data.price = orders.price;
 
     console.log(data)
-    fetch("http://localhost:5000/placeorderInsert", {
+    fetch("https://fathomless-headland-38595.herokuapp.com/placeorderInsert", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

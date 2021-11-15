@@ -98,7 +98,7 @@ const useFirebase = () => {
 
 // resgisteratiuon information is storeing firebase & also my database mongobd......
   const StoreUserInformation = ({name, email}) => {
-    fetch('http://localhost:5000/signup/userInformation', {
+    fetch('https://fathomless-headland-38595.herokuapp.com/signup/userInformation', {
       method: 'POST',
       headers: { "content-type": "application/json" },
       body: JSON.stringify({name, email})
